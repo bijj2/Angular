@@ -6,17 +6,17 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 
-//export class LoginService {
+export class LoginService {
 
-//  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) { }
 
-  //uri = "http://localhost:3000/login"
+  uri = "http://localhost:3000/login"
 
- // login(usuario: User): Observable<any> {
-   // return this.httpClient.post(this.uri, JSON.stringify(usuario), {
-     // headers: new HttpHeaders({'Content-Type': 'application/json' }),
-     // observe: 'response'
-    //})
-  //}
+   login(usuario: User): Observable<any> {
+    return this.httpClient.post(this.uri, JSON.stringify(usuario), {
+      headers: new HttpHeaders({'Content-Type': 'application/json' }),
+      observe: 'response'
+    })
+  }
 
-//}
+}
