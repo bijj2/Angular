@@ -1,1 +1,81 @@
-<p>login works!</p>
+<body onload="carregarDestaques()">
+    <header>
+        <div class="container-grid posicionamento-header">
+         <a href="index.html"><img class="logo" src="/assets/img/Logo.svg" alt="Logo"></a>
+        </div>
+    </header>
+<form (ngSubmit)="receberDados()">
+   <div class="tela-login">
+        <div id="clock1">
+            <div class="login-container col-md-12">
+                <h2>Login</h2>
+                <input class="login-input" type="email" placeholder="EX.:email@email.com" id="email" [(ngModel)]="userModel.email">
+                <span class="login-input-border"></span>
+                <input class="login-input" type="password" placeholder="senha" id="senha" [(ngModel)]="userModel.password">
+                <span class="login-input-border"></span>
+                <input id="entrar" class="entrar" type="submit" value="Fazer Login">
+                <div class="alinhar-cad-esq">
+                <a href="">Esqueci a senha</a>
+                <a routerLink="contato">Cadastre-se</a>
+                </div>
+            </div>
+        </div>
+   </div>
+</form>
+   <footer>
+        <div class="rodape">
+            <div class="links">
+                <div class="institucional">
+                    <h2>Institucional</h2>
+                        <ul>
+                            <li><a href="quemsomos.html">Quem Somos</a></li>
+                            <li><a href="#">Politica de Privacidades</a></li>
+                            <li><a href="#">Politica xxxxxxx</a></li>
+                            <li><a href="#">Politica xxxxxxx</a></li>
+                        </ul>
+                </div>
+                <div class="atendimento">
+                    <h2>Atendimento</h2>
+                        <ul>
+                        <li><a href="#">email@email.com.br</a></li>
+                        <li><a href="#">(99) 9 9999-9999</a></li>
+                        <li><a href="#">(99) 9999-9999</a></li>
+                        </ul>
+                </div>
+                <div class="sociais">
+                    <h2>Redes Sociais</h2>
+                    <a href=""><img src="img/instagram.png"></a>
+                    <a href=""><img src="img/facebook.png"></a>
+                </div>
+                <div class="formas-de-pagamento">
+                <h2>Formas de Pagamento</h2>
+                <a href=""><img src="img/formas de pagamento.png"></a>
+                </div>
+            </div>    
+                <div class="ebit">
+                <h2>Selo de Segurança</h2>
+                <a href="https://www.ebit.com.br/game-games"><img src="img/ebit.png"></a>
+                </div>
+                <div class="plataforma">
+                <a href=""><img src="img/plataforma.png"></a>
+                </div>
+                <div class="dados">
+                <p>cnpj 122322222222222 - loja test teste teste, 2500 teste teste</p>
+            </div>
+        </div>
+    </footer>
+<script>
+    let menu = document.getElementById("menu")
+
+    function mostrarmenu(){
+        if (menu.style.display != "flex"){
+            menu.style.display = "flex"
+        } else {
+            menu.style.display = "none"
+        }
+    }
+</script>
+<script src="js/jquery-3.6.0.js"></script>
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>

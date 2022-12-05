@@ -11,5 +11,10 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
+  userModel = new User;
 
+  receberDados(){
+    console.log(this.userModel);
+  }
 }

@@ -8,7 +8,7 @@
              <input class="campo-busca" id="campo-busca" type="text" placeholder="digite aqui">
          </form>    
          </div>
-         <a href="login.html" class="minhaconta">Minha Conta</a>
+         <a routerLink="login" class="minhaconta">Minha Conta</a>
          <a href=""><img class="sacolinha" src="/assets/img/sacolinha.svg" alt="sacolinha"></a>
         </div>
         <div class="menu">
@@ -23,7 +23,7 @@
         </div>
    </header>
    <div id="carrossel" class="carrossel">
-       <img src="/assets/img/bannerfull" alt="banner1">
+       <img src="/assets/img/Bannerfull.png" alt="banner1">
        <!--<img src="/assets/img/Bannerfull2.png" alt="banner2">!-->
    </div>
     <!--<div class="bannerfull">
@@ -35,67 +35,17 @@
             <a href=""><img src="/assets/img/minibanner2.png"></a>
         </div>
     </section> 
-
     <section class="secao-destaques">
         <div class="Destaque">
             <h2>Novidades</h2>
         </div>
         <div class="listagem"> 
             <div id="destaques" class="blocos-produtos">
-                <div class="Produto">
-                    <a href=""><img class="imagem" src="/assets/img/Produto 1.png"></a>
-                    <h4>Nome do produto completo teste teste teste</h4>
-                    <p>DE: R$ 500,00</p>
-                    <p>Por:459,99</p>
-                    <a href=""><img class="comprar" src="/assets/img/botao-comprar.png"></a>
-                </div>
-                <div class="Produto">
-                    <a href=""><img class="imagem" src="/assets/img/Produto 2.png"></a>
-                    <h4>Nome do produto completo teste teste teste</h4>
-                    <p>DE: R$ 500,00</p>
-                    <p>Por:459,99</p>
-                    <a href=""><img class="comprar" src="/assets/img/botao-comprar.png"></a>
-                </div>
-                <div class="Produto">
-                    <a href=""><img class="imagem" src="/assets/img/Produto 3.png"></a>
-                    <h4>Nome do produto completo teste teste teste</h4>
-                    <p>DE: R$ 500,00</p>
-                    <p>Por:459,99</p>
-                    <a href=""><img class="comprar" src="/assets/img/botao-comprar.png"></a>
-                </div>
-                <div class="Produto">
-                    <a href=""><img class="imagem" src="/assets/img/Produto 4.png"></a>
-                    <h4>Nome do produto completo teste teste teste</h4>
-                    <p>DE: R$ 500,00</p>
-                    <p>Por:459,99</p>
-                    <a href=""><img class="comprar" src="/assets/img/botao-comprar.png"></a>
-                </div>
-                <div class="Produto">
-                    <a href=""><img class="imagem" src="/assets/img/Produto 1.png"></a>
-                    <h4>Nome do produto completo teste teste teste</h4>
-                    <p>DE: R$ 500,00</p>
-                    <p>Por:459,99</p>
-                    <a href=""><img class="comprar" src="/assets/img/botao-comprar.png"></a>
-                </div>
-                <div class="Produto">
-                    <a href=""><img class="imagem" src="/assets/img/Produto 2.png"></a>
-                    <h4>Nome do produto completo teste teste teste</h4>
-                    <p>DE: R$ 500,00</p>
-                    <p>Por:459,99</p>
-                    <a href=""><img class="comprar" src="/assets/img/botao-comprar.png"></a>
-                </div>
-                <div class="Produto">
-                    <a href=""><img class="imagem" src="/assets/img/Produto 3.png"></a>
-                    <h4>Nome do produto completo teste teste teste</h4>
-                    <p>DE: R$ 500,00</p>
-                    <p>Por:459,99</p>
-                    <a href=""><img class="comprar" src="/assets/img/botao-comprar.png"></a>
-                </div>
-                <div class="Produto">
-                    <a href=""><img class="imagem" src="/assets/img/Produto 4.png"></a>
-                    <h4>Nome do produto completo teste teste teste</h4>
-                    <p>DE: R$ 500,00</p>
-                    <p>Por:459,99</p>
+                <div *ngfor="let produtos of listaProdutos" class="Produto">
+                    <img [src]=produtos.imagem class="comprar"alt="Foto do produto">
+                    <h4>{{produtos.titulo}}</h4>
+                    <p>{{produtos.precode}}</p>
+                    <p>{{produtos.precopor}}</p>
                     <a href=""><img class="comprar" src="/assets/img/botao-comprar.png"></a>
                 </div>
             </div>
@@ -111,12 +61,12 @@
             </div>
         </div>
         <div class="container-img col-md-6">
-            <a href=""><img src = "/assets/Rectangle 44.png"></a>
+            <a href=""><img src = "/assets/img/Rectangle 44.png"></a>
         </div>
         </div>
     </section>    
     <section class="Destaque">
-        <h1>Destaques</h1>
+        <h2>Destaques</h2>
     </section>
     <section class="secao-destaques">
         <div class="Container"> 
@@ -170,7 +120,7 @@
                     <a href=""><img class="comprar" src="/assets/img/botao-comprar.png"></a>
                 </div>
                 <div class="Produto">
-                    <a href=""><img class="imagem" src="/src/assets/img/Produto 4.png"></a>
+                    <a href=""><img class="imagem" src="/assets/img/Produto 4.png"></a>
                     <h4>Nome do produto completo teste teste teste</h4>
                     <p>DE: R$ 500,00</p>
                     <p>Por:459,99</p>

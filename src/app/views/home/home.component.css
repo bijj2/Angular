@@ -67,7 +67,7 @@ header{
 }*/
 
 #carrossel img{
-    display: none;
+    display: flex;
 }
 
 .banner-ativo{
