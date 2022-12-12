@@ -10,9 +10,9 @@
             <form (ngSubmit)="receberDados()">
             <div class="login-container col-md-12">
                 <h2>Login</h2>
-                <input class="login-input" type="email" placeholder="EX.:email@email.com" id="email" [(ngModel)]="userModel.email">
+                <input [(ngModel)]="userModel.email" name="email" class="login-input" type="email" placeholder="EX.:email@email.com" id="email">
                 <span class="login-input-border"></span>
-                <input class="login-input" type="password" placeholder="senha" id="senha" [(ngModel)]="userModel.password">
+                <input [(ngModel)]="userModel.password" name="senha" class="login-input" type="password" placeholder="senha" id="senha">
                 <span class="login-input-border"></span>
                 <input id="entrar" class="entrar" type="submit" value="Fazer Login">
                 <div class="alinhar-cad-esq">
@@ -21,6 +21,7 @@
                 </div>
             </div>
             </form>
+            <p id="msgErro" *ngIf="mensagem != ''">{{mensagem}}</p>
         </div>
    </div>
    <footer>
@@ -45,20 +46,20 @@
                 </div>
                 <div class="sociais">
                     <h2>Redes Sociais</h2>
-                    <a href=""><img src="img/instagram.png"></a>
-                    <a href=""><img src="img/facebook.png"></a>
+                    <a href=""><img src="/assets/img/instagram.png"></a>
+                    <a href=""><img src="/assets/img/facebook.png"></a>
                 </div>
                 <div class="formas-de-pagamento">
                 <h2>Formas de Pagamento</h2>
-                <a href=""><img src="img/formas de pagamento.png"></a>
+                <a href=""><img src="/assets/img/formas de pagamento.png"></a>
                 </div>
             </div>    
                 <div class="ebit">
                 <h2>Selo de Segurança</h2>
-                <a href="https://www.ebit.com.br/game-games"><img src="img/ebit.png"></a>
+                <a href="https://www.ebit.com.br/game-games"><img src="/assets/img/ebit.png"></a>
                 </div>
                 <div class="plataforma">
-                <a href=""><img src="img/plataforma.png"></a>
+                <a href=""><img src="/assets/img/plataforma.png"></a>
                 </div>
                 <div class="dados">
                 <p>cnpj 122322222222222 - loja test teste teste, 2500 teste teste</p>

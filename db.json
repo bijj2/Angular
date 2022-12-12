@@ -2,9 +2,15 @@
   "users": [
     {
       "email": "teste@bianca.com",
-      "password": "$2a$10$YxG4Oc6ZNZnhUgMnjWhxIOh.SxvWAqMYWz6u.2xN42bYF/BLwwREa",
+      "password": "$2a$10$BLeoQ1HTOjtK9Pa6Gidsxe0SV0QQ9ut1KbIktqLTzk84OUbbnPW0q",
       "nome": "Bianca",
       "id": 1
+    },
+    {
+      "email": "bianca@teste.com",
+      "password": "$2a$10$/AbO6q0SAnLkGRuRs0HjredmiAD12HA/dcoZOgJsHdCUKyP57fWsO",
+      "nome": "Bianca2",
+      "id": 2
     }
   ],
   "products": []

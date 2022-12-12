@@ -24,4 +24,6 @@ export class HomeComponent implements OnInit {
       console.log(this.listaProdutos);
     } )
   }
+
+  nome: string | null =localStorage.getItem("nomeUsuario");
 }

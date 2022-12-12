@@ -8,7 +8,8 @@
              <input class="campo-busca" id="campo-busca" type="text" placeholder="digite aqui">
          </form>    
          </div>
-         <a routerLink="login" class="minhaconta">Minha Conta</a>
+         <a href="#" *ngIf="nome">{{nome}}</a>
+         <a routerLink="login" *ngIf="!nome" class="minhaconta">Minha Conta</a>
          <a href=""><img class="sacolinha" src="/assets/img/sacolinha.svg" alt="sacolinha"></a>
         </div>
         <div class="menu">
