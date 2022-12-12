@@ -4,9 +4,10 @@
          <a href="index.html"><img class="logo" src="/assets/img/Logo.svg" alt="Logo"></a>
         </div>
     </header>
-<form (ngSubmit)="receberDados()">
+
    <div class="tela-login">
         <div id="clock1">
+            <form (ngSubmit)="receberDados()">
             <div class="login-container col-md-12">
                 <h2>Login</h2>
                 <input class="login-input" type="email" placeholder="EX.:email@email.com" id="email" [(ngModel)]="userModel.email">
@@ -19,9 +20,9 @@
                 <a routerLink="contato">Cadastre-se</a>
                 </div>
             </div>
+            </form>
         </div>
    </div>
-</form>
    <footer>
         <div class="rodape">
             <div class="links">
